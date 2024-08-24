@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+
+    <!--houses main title of the scoreboard-->
+    <div>
+        <h1 class="title">Scoreboard</h1>
+    </div>
+
+    <!--structure to house home team score and increment buttons-->
+    <div class="container">
+        <div class="column">
+            <h3 class="team">HOME</h3>
+            <h2 class="score" id="home-score">0</h2>
+            <div>
+                <button class="score-btn" id="home-score-btn-1" onclick="increaseHomeScoreOne()">+1</button>
+                <button class="score-btn" id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+2</button>
+                <button class="score-btn" id="home-score-btn-3" onclick="increaseHomeScoreThree()">+3</button>
+            </div>
+        </div>
+
+        <!--structure to house away team score and increment buttons-->
+        <div class="column">
+            <h3 class="team">AWAY</h3>
+            <h2 class="score" id="away-score">0</h2>
+            <div>
+                <button class="score-btn" id="away-score-btn-1" onclick="increaseAwayScoreOne()">+1</button>
+                <button class="score-btn" id="away-score-btn-2" onclick="increaseAwayScoreTwo()">+2</button>
+                <button class="score-btn" id="away-score-btn-3" onclick="increaseAwayScoreThree()">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <!--structure to house reset button-->
+    <div class="score-reset">
+        <button id="score-reset-btn" onclick="resetScoreboard()">Reset Scoreboard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
